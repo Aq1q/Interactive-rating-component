@@ -13,7 +13,8 @@ body p {
 }
 
 .visible {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .invisible {
@@ -58,7 +59,7 @@ body p {
 }
 .container #rating #submit {
   height: 45px;
-  width: 280px;
+  width: 100%;
   border: none;
   border-radius: 40px;
   color: hsl(0, 0%, 100%);
@@ -76,7 +77,7 @@ body p {
 .rates {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 17px;
   align-items: center;
   margin-bottom: 25px;
@@ -96,4 +97,95 @@ body p {
   cursor: pointer;
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
+}
+
+.previous {
+  background-color: hsl(217, 12%, 63%) !important;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.previous:hover {
+  background-color: hsl(25, 97%, 53%) !important;
+}
+
+#thanks {
+  width: 327px;
+  height: 360px;
+  background: linear-gradient(#1e252f, hsl(215, 27%, 12%));
+  border-radius: 15px;
+  padding: 24px;
+  text-align: center;
+}
+#thanks #thank-you-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+#thanks .ratio-container {
+  display: flex;
+  align-self: center;
+  width: 167px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+  margin-bottom: 20px;
+}
+#thanks h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#thanks .text {
+  font-size: 14px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.4rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #rating {
+    width: 416px !important;
+    height: 417px !important;
+  }
+  #rating #star {
+    width: 52px !important;
+    height: 52px !important;
+  }
+  #rating .text {
+    font-size: 15px !important;
+    padding-right: 30px !important;
+    line-height: 1.5rem !important;
+  }
+  #rating .header {
+    font-size: 1.9rem !important;
+  }
+  .rate {
+    font-size: 15px;
+    width: 52px !important;
+    height: 52px !important;
+  }
+  #thanks {
+    width: 416px !important;
+    height: 417px !important;
+    padding: 39px !important;
+  }
+  #thanks #thank-you-img {
+    margin-bottom: 30px !important;
+  }
+  #thanks .ratio-container {
+    margin-bottom: 35px !important;
+    width: 192px !important;
+    height: 33px !important;
+  }
+  #thanks h1 {
+    font-size: 1.9rem !important;
+  }
+  #thanks .text {
+    font-size: 15px !important;
+    line-height: 1.5rem !important;
+  }
 }/*# sourceMappingURL=style.css.map */

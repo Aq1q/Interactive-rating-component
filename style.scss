@@ -14,6 +14,7 @@ $very-dark-blue: hsl(216, 12%, 8%);
     box-sizing: border-box;
     font-family: "Overpass";
 }
+
 body {
     background-color: $very-dark-blue;
     height: 100vh;
@@ -23,7 +24,8 @@ body {
     }
 }
 .visible {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 .invisible {
     display: none;
@@ -64,7 +66,7 @@ body {
         }
         #submit {
             height: 45px;
-            width: 280px;
+            width: 100%;
             border: none;
             border-radius: 40px;
             color: $white;
@@ -83,7 +85,7 @@ body {
 .rates {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 17px;
     align-items: center;
     margin-bottom: 25px;
@@ -102,5 +104,95 @@ body {
         cursor: pointer;
         background-color: $orange;
         color: $white;
+    }
+}
+.previous{
+    background-color: $light-grey !important;
+    color: $white !important;
+}
+.previous:hover {
+    background-color: $orange !important;
+    $color: white !important;
+}
+
+#thanks {
+    width: 327px;
+    height: 360px;
+    background: linear-gradient(#1e252f, $darker-blue);
+    border-radius: 15px;
+    padding: 24px;
+    text-align: center;
+    #thank-you-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+    .ratio-container {
+        display: flex;
+        align-self: center;
+        width: 167px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        color: $orange;
+        background-color: $dark-blue;
+        margin-bottom: 20px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: $white;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .text {
+        font-size: 14px;
+        color: $light-grey;
+        line-height: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #rating {
+        width: 416px !important;
+        height: 417px !important;
+        #star {
+            width: 52px !important;
+            height: 52px !important;
+        }
+        .text {
+            font-size: 15px !important;
+            padding-right: 30px !important;
+            line-height: 1.5rem !important;
+        }
+        .header {
+            font-size: 1.9rem !important;
+        }
+    }
+    .rate{
+        font-size: 15px;
+        width: 52px !important;
+        height: 52px !important;
+    }
+    #thanks {
+        width: 416px !important;
+        height: 417px !important;
+        padding: 39px !important;
+        #thank-you-img {
+            margin-bottom: 30px !important;
+        }
+        .ratio-container {
+            margin-bottom: 35px !important;
+            width: 192px !important;
+            height: 33px !important;
+        }
+        h1 {
+            font-size: 1.9rem !important;
+        }
+        .text{
+            font-size: 15px !important;
+            line-height: 1.5rem !important;
+        } 
     }
 }
