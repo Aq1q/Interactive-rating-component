@@ -1,0 +1,101 @@
+// Primary colors
+$orange: hsl(25, 97%, 53%);
+
+// Neutral colors
+
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$darker-blue: hsl(215, 27%, 12%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: $very-dark-blue;
+    height: 100vh;
+    min-height: 100vh;
+    p{
+        font-size: 15px;
+    }
+}
+.visible {
+    display: block;
+}
+.invisible {
+    display: none;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    #rating {
+        width: 327px;
+        height: 360px;
+        background: linear-gradient(#1e252f, $darker-blue);
+        border-radius: 15px;
+        padding: 24px;
+        #star {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $dark-blue;
+            margin-bottom: 25px;
+        }
+        .header {
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .text {
+            color: $light-grey;
+            line-height: 1.2rem;
+            margin-bottom: 30px;
+            padding-right: 5px;
+        }
+        #submit {
+            height: 45px;
+            width: 280px;
+            border: none;
+            border-radius: 40px;
+            color: $white;
+            background-color: $orange;
+            letter-spacing: 0.3rem;
+            font-weight: 500;
+        }
+        #submit:hover {
+            cursor: pointer;
+            color: $orange;
+            background-color: $white;
+        }
+    }
+}
+.rates {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    align-items: center;
+    margin-bottom: 25px;
+    .rate {
+        color: $light-grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        background-color: $dark-blue;
+        border-radius: 50%;
+    }
+    .rate:hover {
+        cursor: pointer;
+    }
+}
