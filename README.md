@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Repo](https://github.com/Aq1q/interative-rating-component)
-- Live Site URL: [Github Pages](https://aq1q.github.io/interative-rating-component/)
+- Solution URL: [Repo](https://github.com/Aq1q/Interative-rating-component)
+- Live Site URL: [Github Pages](https://aq1q.github.io/Interative-rating-component/)
 
 ## My process
 
