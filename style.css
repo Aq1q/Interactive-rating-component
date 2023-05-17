@@ -95,7 +95,7 @@ body p {
 }
 .rates .rate:hover {
   cursor: pointer;
-  background-color: hsl(25, 97%, 53%);
+  background-color: hsl(217, 12%, 63%);
   color: hsl(0, 0%, 100%);
 }
 
@@ -150,6 +150,7 @@ body p {
   #rating {
     width: 416px !important;
     height: 417px !important;
+    border-radius: 30px !important;
   }
   #rating #star {
     width: 52px !important;
@@ -171,6 +172,7 @@ body p {
   #thanks {
     width: 416px !important;
     height: 417px !important;
+    border-radius: 30px !important;
     padding: 39px !important;
   }
   #thanks #thank-you-img {
