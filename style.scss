@@ -12,6 +12,7 @@ $very-dark-blue: hsl(216, 12%, 8%);
 
 *{
     box-sizing: border-box;
+    font-family: "Overpass";
 }
 body {
     background-color: $very-dark-blue;
@@ -59,7 +60,7 @@ body {
             color: $light-grey;
             line-height: 1.2rem;
             margin-bottom: 30px;
-            padding-right: 5px;
+            font-size: 14px;
         }
         #submit {
             height: 45px;
@@ -68,8 +69,9 @@ body {
             border-radius: 40px;
             color: $white;
             background-color: $orange;
-            letter-spacing: 0.3rem;
-            font-weight: 500;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
         }
         #submit:hover {
             cursor: pointer;
@@ -86,6 +88,7 @@ body {
     align-items: center;
     margin-bottom: 25px;
     .rate {
+        font-size: 14px;
         color: $light-grey;
         display: flex;
         align-items: center;
@@ -97,5 +100,7 @@ body {
     }
     .rate:hover {
         cursor: pointer;
+        background-color: $orange;
+        color: $white;
     }
 }
